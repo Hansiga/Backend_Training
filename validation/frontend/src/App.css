@@ -1,0 +1,88 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center all pages */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* Login box styling */
+.center h2 {
+  color: #2f3640;
+  margin-bottom: 20px;
+}
+
+.center input {
+  padding: 10px 15px;
+  width: 250px;
+  margin: 8px 0;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.center input:focus {
+  border-color: #0097e6;
+  box-shadow: 0 0 5px rgba(0, 151, 230, 0.5);
+}
+
+/* Buttons styling */
+button {
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0097e6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #00a8ff;
+}
+
+/* Season buttons */
+.center button {
+  width: 120px;
+}
+
+/* Season box styling */
+.season-box {
+  margin-top: 25px;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.season-box h3 {
+  margin-bottom: 12px;
+  color: #2f3640;
+}
+
+.season-box p {
+  color: #718093;
+  line-height: 1.5;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 400px) {
+  .center input, .center button, .season-box {
+    width: 90%;
+  }
+}

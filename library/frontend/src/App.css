@@ -1,0 +1,116 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #eef2f5;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+.navbar {
+  background-color: #34495e;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.navbar button {
+  background-color: #1abc9c;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #16a085;
+}
+
+/* ===== REGISTER BOOK FORM (POPUP CARD) ===== */
+.form {
+  width: 320px;
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #2980b9;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 85%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th {
+  background-color: #ecf0f1;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.edit {
+  background-color: #f39c12;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete {
+  background-color: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit:hover {
+  background-color: #e67e22;
+}
+
+.delete:hover {
+  background-color: #c0392b;
+}
