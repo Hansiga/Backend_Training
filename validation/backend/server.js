@@ -1,25 +1,21 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const port = 3000;
 
-app.use(cors()); // ✅ allow frontend requests
+app.use(cors());
+app.use(express.json());
 
-function auth(req, res, next) {
-  const a = true;
+mongoose.connect("mongodb://127.0.0.1:27017/seasonApp")
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.log(err));
 
-  if (a) {
-    next();
-  } else {
-    res.status(401).send("Not Authenticated");
-  }
-}
+const loveRoute = require("./routes/loveRoute");
+app.use("/api", loveRoute);
 
-app.get("/check", auth, (req, res) => {
-  res.send("Authenticated");
+app.listen(3000, () => {
+  console.log("Backend running on port 3000");
 });
 
-app.listen(port, () => {
-  console.log(`Backend running on http://localhost:${port}`);
-});
+
