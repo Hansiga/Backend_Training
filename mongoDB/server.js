@@ -27,7 +27,7 @@ app.post('/add',async(req,res)=>{
         const result=await db.collection('students').insertOne(req.body);
         res.status(201).json(result);
     }catch(error){
-        res.status(500).send("Error adding student")
+        res.status(500).send("Error adding the student")
     }
 })
 
