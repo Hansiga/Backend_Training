@@ -10,8 +10,8 @@ const myPro=new Promise((resolve,reject)=>{
 });
 
 myPro
-     .then((message)=>{
-        console.log(message)
+     .then((messages)=>{
+        console.log(messages)
     })
     .catch((error)=>{
         console.log(error)
